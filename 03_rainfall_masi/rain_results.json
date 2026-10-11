@@ -1,0 +1,362 @@
+{
+ "season_rain_sep_mar": {
+  "2000": {
+   "rain_sep_mar_mm": 30.0,
+   "anom_%": -90.3
+  },
+  "2001": {
+   "rain_sep_mar_mm": 288.2,
+   "anom_%": -6.9
+  },
+  "2002": {
+   "rain_sep_mar_mm": 219.1,
+   "anom_%": -29.2
+  },
+  "2003": {
+   "rain_sep_mar_mm": 387.5,
+   "anom_%": 25.2
+  },
+  "2004": {
+   "rain_sep_mar_mm": 377.2,
+   "anom_%": 21.8
+  },
+  "2005": {
+   "rain_sep_mar_mm": 206.5,
+   "anom_%": -33.3
+  },
+  "2006": {
+   "rain_sep_mar_mm": 334.0,
+   "anom_%": 7.9
+  },
+  "2007": {
+   "rain_sep_mar_mm": 179.5,
+   "anom_%": -42.0
+  },
+  "2008": {
+   "rain_sep_mar_mm": 208.0,
+   "anom_%": -32.8
+  },
+  "2009": {
+   "rain_sep_mar_mm": 545.0,
+   "anom_%": 76.0
+  },
+  "2010": {
+   "rain_sep_mar_mm": 495.8,
+   "anom_%": 60.2
+  },
+  "2011": {
+   "rain_sep_mar_mm": 369.2,
+   "anom_%": 19.3
+  },
+  "2012": {
+   "rain_sep_mar_mm": 215.9,
+   "anom_%": -30.3
+  },
+  "2013": {
+   "rain_sep_mar_mm": 457.4,
+   "anom_%": 47.8
+  },
+  "2014": {
+   "rain_sep_mar_mm": 301.2,
+   "anom_%": -2.7
+  },
+  "2015": {
+   "rain_sep_mar_mm": 408.2,
+   "anom_%": 31.9
+  },
+  "2016": {
+   "rain_sep_mar_mm": 201.2,
+   "anom_%": -35.0
+  },
+  "2017": {
+   "rain_sep_mar_mm": 286.4,
+   "anom_%": -7.5
+  },
+  "2018": {
+   "rain_sep_mar_mm": 353.3,
+   "anom_%": 14.1
+  },
+  "2019": {
+   "rain_sep_mar_mm": 297.8,
+   "anom_%": -3.8
+  },
+  "2020": {
+   "rain_sep_mar_mm": 241.7,
+   "anom_%": -21.9
+  },
+  "2021": {
+   "rain_sep_mar_mm": 324.5,
+   "anom_%": 4.8
+  },
+  "2022": {
+   "rain_sep_mar_mm": 246.7,
+   "anom_%": -20.3
+  },
+  "2023": {
+   "rain_sep_mar_mm": 255.4,
+   "anom_%": -17.5
+  },
+  "2024": {
+   "rain_sep_mar_mm": 262.1,
+   "anom_%": -15.3
+  },
+  "2025": {
+   "rain_sep_mar_mm": 277.4,
+   "anom_%": -10.4
+  },
+  "2026": {
+   "rain_sep_mar_mm": 549.6,
+   "anom_%": 77.6
+  }
+ },
+ "macro": {
+  "rain vs cereal production": {
+   "rho": 0.789,
+   "p": 0.0,
+   "n": 25
+  },
+  "rain vs agri value-added growth": {
+   "rho": 0.614,
+   "p": 0.0009,
+   "n": 26
+  },
+  "rain vs real GDP growth": {
+   "rho": 0.249,
+   "p": 0.22,
+   "n": 26
+  },
+  "rain vs real GDP growth (ex-2020)": {
+   "rho": 0.266,
+   "n": 25
+  },
+  "GDP growth pp per +10% rain (ex-2020)": 0.137
+ },
+ "monthly": {
+  "masi_t ~ rain_z_t (crop months)": {
+   "b": -0.2244,
+   "t": -0.65,
+   "p": 0.514,
+   "R2": 0.003,
+   "n": 147
+  },
+  "masi_t+1 ~ rain_z_t (crop months)": {
+   "b": -0.3484,
+   "t": -1.05,
+   "p": 0.295,
+   "R2": 0.006,
+   "n": 147
+  },
+  "masi_t+1..t+3 ~ rain_z_t (crop months)": {
+   "b": -0.7424,
+   "t": -1.01,
+   "p": 0.314,
+   "R2": 0.009,
+   "n": 147
+  },
+  "masi_t+1 ~ rain_z_t (all months)": {
+   "b": -0.3007,
+   "t": -1.38,
+   "p": 0.167,
+   "R2": 0.006,
+   "n": 295
+  }
+ },
+ "annual_corr": {
+  "rain vs MASI Sep-Mar (contemporaneous)": -0.286,
+  "rain vs MASI Apr-Dec (after rain is known)": -0.117,
+  "n_seasons": 24
+ },
+ "annual_dry_vs_wet": {
+  "dry_seasons": [
+   2005,
+   2007,
+   2008,
+   2012,
+   2016,
+   2020,
+   2022
+  ],
+  "wet_seasons": [
+   2003,
+   2004,
+   2009,
+   2010,
+   2013,
+   2015,
+   2026
+  ],
+  "MASI Apr-Dec after dry (mean %)": 3.11,
+  "MASI Apr-Dec after wet (mean %)": 3.71,
+  "MASI Sep-Mar in dry": 4.75,
+  "MASI Sep-Mar in wet": -0.8
+ },
+ "sectors": {
+  "Agri-food & consumer": {
+   "same_month": {
+    "b": -0.1211,
+    "t": -0.43,
+    "p": 0.67,
+    "R2": 0.002,
+    "n": 142
+   },
+   "next_month": {
+    "b": -0.2822,
+    "t": -1.05,
+    "p": 0.294,
+    "R2": 0.008,
+    "n": 142
+   }
+  },
+  "Banks": {
+   "same_month": {
+    "b": -0.4848,
+    "t": -1.26,
+    "p": 0.206,
+    "R2": 0.011,
+    "n": 142
+   },
+   "next_month": {
+    "b": -0.5085,
+    "t": -1.4,
+    "p": 0.163,
+    "R2": 0.012,
+    "n": 142
+   }
+  },
+  "Building & real estate": {
+   "same_month": {
+    "b": -0.7805,
+    "t": -1.44,
+    "p": 0.15,
+    "R2": 0.014,
+    "n": 142
+   },
+   "next_month": {
+    "b": -0.7212,
+    "t": -1.31,
+    "p": 0.19,
+    "R2": 0.012,
+    "n": 142
+   }
+  },
+  "Mining & energy": {
+   "same_month": {
+    "b": 1.4116,
+    "t": 2.46,
+    "p": 0.014,
+    "R2": 0.038,
+    "n": 142
+   },
+   "next_month": {
+    "b": 0.6795,
+    "t": 1.27,
+    "p": 0.205,
+    "R2": 0.009,
+    "n": 142
+   }
+  },
+  "Agri \u2212 Mining": {
+   "same_month": {
+    "b": -1.5327,
+    "t": -2.81,
+    "p": 0.005,
+    "R2": 0.055,
+    "n": 142
+   },
+   "next_month": {
+    "b": -0.9617,
+    "t": -1.81,
+    "p": 0.071,
+    "R2": 0.021,
+    "n": 142
+   }
+  }
+ },
+ "sector_members_found": {
+  "Agri-food & consumer": [
+   "CSR",
+   "LES",
+   "DRI",
+   "OUL",
+   "UMR",
+   "MUT",
+   "CRS",
+   "LBV",
+   "ATH",
+   "NEJ",
+   "EQD",
+   "SLF"
+  ],
+  "Banks": [
+   "ATW",
+   "BCP",
+   "BOA",
+   "BCI",
+   "CDM",
+   "CIH",
+   "CFG"
+  ],
+  "Building & real estate": [
+   "LHM",
+   "CMA",
+   "ADH",
+   "RDS",
+   "SID",
+   "ARD",
+   "JET"
+  ],
+  "Mining & energy": [
+   "MNG",
+   "SMI",
+   "CMT",
+   "GAZ",
+   "TQM",
+   "TMA"
+  ]
+ },
+ "backtest_masi_timing": {
+  "buy_and_hold": {
+   "ann_ret_%": 6.45,
+   "ann_vol_%": 14.84,
+   "sharpe": 0.434,
+   "max_dd_logpts": -55.7
+  },
+  "rain_timed": {
+   "ann_ret_%": 2.56,
+   "ann_vol_%": 11.53,
+   "sharpe": 0.222,
+   "max_dd_logpts": -51.2
+  },
+  "months_in_cash": 82
+ },
+ "backtest_agri_vs_mining_ls": {
+  "ann_ret_%": -7.05,
+  "ann_vol_%": 24.54,
+  "sharpe": -0.287,
+  "max_dd_logpts": -144.4
+ },
+ "mood_daily": {
+  "n_days": 6162,
+  "r ~ cloud_dev (per 100 pp cloud)": {
+   "b_%": -0.037,
+   "t": -0.97,
+   "p": 0.332
+  },
+  "r ~ rainy day": {
+   "b_%": 0.001,
+   "t": 0.03,
+   "p": 0.975,
+   "n_rainy": 891
+  },
+  "logit up-day ~ cloud_dev": {
+   "b": 0.0002,
+   "p": 0.869
+  },
+  "mean r clear days (cloud<=10%)": 0.0331,
+  "n_clear": 975,
+  "mean r overcast (cloud>=90%)": 0.0198,
+  "n_overcast": 309,
+  "annualised gap clear-minus-overcast_%": 3.3,
+  "welch_p": 0.799
+ }
+}

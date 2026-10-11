@@ -1,0 +1,312 @@
+{
+ "sample": "2002-03\u20132025-12",
+ "T": 285,
+ "corr_full": {
+  "usdmad": {
+   "usdmad": 1.0,
+   "phos": 0.2,
+   "dap": -0.073,
+   "masi": -0.083,
+   "eurusd": -0.966,
+   "brent": -0.169
+  },
+  "phos": {
+   "usdmad": 0.2,
+   "phos": 1.0,
+   "dap": 0.051,
+   "masi": -0.04,
+   "eurusd": -0.19,
+   "brent": -0.006
+  },
+  "dap": {
+   "usdmad": -0.073,
+   "phos": 0.051,
+   "dap": 1.0,
+   "masi": 0.095,
+   "eurusd": 0.07,
+   "brent": 0.156
+  },
+  "masi": {
+   "usdmad": -0.083,
+   "phos": -0.04,
+   "dap": 0.095,
+   "masi": 1.0,
+   "eurusd": 0.031,
+   "brent": 0.168
+  },
+  "eurusd": {
+   "usdmad": -0.966,
+   "phos": -0.19,
+   "dap": 0.07,
+   "masi": 0.031,
+   "eurusd": 1.0,
+   "brent": 0.143
+  },
+  "brent": {
+   "usdmad": -0.169,
+   "phos": -0.006,
+   "dap": 0.156,
+   "masi": 0.168,
+   "eurusd": 0.143,
+   "brent": 1.0
+  }
+ },
+ "corr_post2015": {
+  "usdmad": {
+   "usdmad": 1.0,
+   "phos": 0.304,
+   "masi": -0.214,
+   "eurusd": -0.876
+  },
+  "phos": {
+   "usdmad": 0.304,
+   "phos": 1.0,
+   "masi": 0.008,
+   "eurusd": -0.266
+  },
+  "masi": {
+   "usdmad": -0.214,
+   "phos": 0.008,
+   "masi": 1.0,
+   "eurusd": 0.036
+  },
+  "eurusd": {
+   "usdmad": -0.876,
+   "phos": -0.266,
+   "masi": 0.036,
+   "eurusd": 1.0
+  }
+ },
+ "ols": {
+  "A: usdmad ~ phos": {
+   "coef": {
+    "const": -0.087,
+    "phos": 0.0385
+   },
+   "p": {
+    "const": 0.4969,
+    "phos": 0.0047
+   },
+   "R2": 0.04,
+   "n": 282
+  },
+  "B: usdmad ~ eurusd": {
+   "coef": {
+    "const": -0.0068,
+    "eurusd": -0.7775
+   },
+   "p": {
+    "const": 0.8198,
+    "eurusd": 0.0
+   },
+   "R2": 0.932,
+   "n": 282
+  },
+  "C: usdmad ~ eurusd + phos + masi": {
+   "coef": {
+    "const": 0.0074,
+    "eurusd": -0.7735,
+    "phos": 0.003,
+    "masi": -0.0264
+   },
+   "p": {
+    "const": 0.828,
+    "eurusd": 0.0,
+    "phos": 0.2307,
+    "masi": 0.1894
+   },
+   "R2": 0.935,
+   "n": 282
+  },
+  "D: usdmad ~ eurusd + phos lags 0-3": {
+   "coef": {
+    "const": -0.0086,
+    "eurusd": -0.7744,
+    "phos": 0.0033,
+    "phos_l1": -0.0001,
+    "phos_l2": -0.0003,
+    "phos_l3": 0.0005
+   },
+   "p": {
+    "const": 0.7711,
+    "eurusd": 0.0,
+    "phos": 0.2227,
+    "phos_l1": 0.9435,
+    "phos_l2": 0.9093,
+    "phos_l3": 0.7097
+   },
+   "R2": 0.932,
+   "n": 282
+  },
+  "E: masi ~ phos + usdmad": {
+   "coef": {
+    "const": 0.5969,
+    "phos": -0.0088,
+    "usdmad": -0.1702
+   },
+   "p": {
+    "const": 0.0305,
+    "phos": 0.5992,
+    "usdmad": 0.2277
+   },
+   "R2": 0.009,
+   "n": 282
+  },
+  "F: masi ~ phos lags 0-3": {
+   "coef": {
+    "const": 0.6307,
+    "phos": -0.0084,
+    "phos_l1": -0.0242,
+    "phos_l2": -0.0238,
+    "phos_l3": -0.0021
+   },
+   "p": {
+    "const": 0.0225,
+    "phos": 0.595,
+    "phos_l1": 0.172,
+    "phos_l2": 0.151,
+    "phos_l3": 0.9161
+   },
+   "R2": 0.011,
+   "n": 282
+  }
+ },
+ "var_lag": 1,
+ "granger": {
+  "usdmad -> phos": 0.232,
+  "usdmad -> masi": 0.4593,
+  "phos -> usdmad": 0.4235,
+  "phos -> masi": 0.2891,
+  "masi -> usdmad": 0.3543,
+  "masi -> phos": 0.3095
+ },
+ "dy_table": {
+  "usdmad": {
+   "usdmad": 95.32,
+   "phos": 3.63,
+   "masi": 0.93
+  },
+  "phos": {
+   "usdmad": 3.85,
+   "phos": 95.96,
+   "masi": 0.65
+  },
+  "masi": {
+   "usdmad": 0.84,
+   "phos": 0.41,
+   "masi": 98.42
+  }
+ },
+ "dy_total": 3.44,
+ "dy_to_others": {
+  "usdmad": 4.56,
+  "phos": 4.5,
+  "masi": 1.25
+ },
+ "dy_from_others": {
+  "usdmad": 4.68,
+  "phos": 4.04,
+  "masi": 1.58
+ },
+ "dy_net": {
+  "usdmad": -0.12,
+  "phos": 0.46,
+  "masi": -0.34
+ },
+ "dy_adj_total": 4.48,
+ "dy_adj_table": {
+  "usdmad_adj": {
+   "usdmad_adj": 94.43,
+   "phos": 0.52,
+   "masi": 6.24
+  },
+  "phos": {
+   "usdmad_adj": 0.35,
+   "phos": 99.02,
+   "masi": 0.65
+  },
+  "masi": {
+   "usdmad_adj": 5.22,
+   "phos": 0.46,
+   "masi": 93.11
+  }
+ },
+ "dy4_total": 26.96,
+ "dy4_table": {
+  "usdmad": {
+   "usdmad": 50.41,
+   "eurusd": 47.27,
+   "phos": 3.49,
+   "masi": 0.98
+  },
+  "eurusd": {
+   "usdmad": 47.11,
+   "eurusd": 50.59,
+   "phos": 3.08,
+   "masi": 0.16
+  },
+  "phos": {
+   "usdmad": 2.02,
+   "eurusd": 1.82,
+   "phos": 93.0,
+   "masi": 0.69
+  },
+  "masi": {
+   "usdmad": 0.46,
+   "eurusd": 0.32,
+   "phos": 0.43,
+   "masi": 98.18
+  }
+ },
+ "rolling_minmax": {
+  "min": [
+   "2018-09",
+   2.47
+  ],
+  "max": [
+   "2020-03",
+   19.68
+  ],
+  "last": [
+   "2025-12",
+   15.46
+  ]
+ },
+ "rollcorr_phos": {
+  "min": [
+   "2007-12",
+   -0.362
+  ],
+  "max": [
+   "2024-06",
+   0.533
+  ],
+  "last": 0.381
+ },
+ "episodes": {
+  "2007-12\u21922008-08 boom": {
+   "phos_%": 305.6,
+   "usdmad_%": -0.6,
+   "masi_%": 10.2,
+   "eurusd_%": 0.6
+  },
+  "2008-08\u21922009-06 bust": {
+   "phos_%": -31.7,
+   "usdmad_%": 4.0,
+   "masi_%": -17.2,
+   "eurusd_%": -4.3
+  },
+  "2021-06\u21922022-06 boom": {
+   "phos_%": 130.0,
+   "usdmad_%": 12.8,
+   "masi_%": -3.2,
+   "eurusd_%": -11.6
+  },
+  "2022-06\u21922023-06 bust": {
+   "phos_%": 19.8,
+   "usdmad_%": -1.7,
+   "masi_%": -3.6,
+   "eurusd_%": 4.1
+  }
+ }
+}

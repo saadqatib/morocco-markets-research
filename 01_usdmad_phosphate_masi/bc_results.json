@@ -1,0 +1,88 @@
+{
+ "main": {
+  "lag": 3,
+  "phos -> usdmad": {
+   "max_stat": 11.03,
+   "sig_cycles": "10.6\u2013628m, 2.0\u20134m"
+  },
+  "usdmad -> phos": {
+   "max_stat": 2.95,
+   "sig_cycles": "none"
+  },
+  "phos -> masi": {
+   "max_stat": 2.33,
+   "sig_cycles": "none"
+  },
+  "masi -> phos": {
+   "max_stat": 2.88,
+   "sig_cycles": "none"
+  },
+  "masi -> usdmad": {
+   "max_stat": 0.97,
+   "sig_cycles": "none"
+  },
+  "usdmad -> masi": {
+   "max_stat": 3.05,
+   "sig_cycles": "none"
+  },
+  "phos -> usdmad_adj": {
+   "max_stat": 0.14,
+   "sig_cycles": "none"
+  },
+  "masi -> usdmad_adj": {
+   "max_stat": 0.58,
+   "sig_cycles": "none"
+  },
+  "dap -> usdmad_adj": {
+   "max_stat": 4.41,
+   "sig_cycles": "none"
+  },
+  "dap -> masi": {
+   "max_stat": 4.33,
+   "sig_cycles": "none"
+  }
+ },
+ "excl_2023-12": {
+  "lag": 9,
+  "phos -> usdmad": {
+   "max_stat": 11.53,
+   "sig_cycles": "5.5\u201322m, 2.6\u20133m"
+  },
+  "usdmad -> phos": {
+   "max_stat": 5.86,
+   "sig_cycles": "none"
+  },
+  "phos -> masi": {
+   "max_stat": 8.03,
+   "sig_cycles": "3.3\u20134m"
+  },
+  "masi -> phos": {
+   "max_stat": 12.56,
+   "sig_cycles": "8.0\u2013628m"
+  },
+  "masi -> usdmad": {
+   "max_stat": 5.73,
+   "sig_cycles": "none"
+  },
+  "usdmad -> masi": {
+   "max_stat": 4.57,
+   "sig_cycles": "none"
+  },
+  "phos -> usdmad_adj": {
+   "max_stat": 2.44,
+   "sig_cycles": "none"
+  },
+  "masi -> usdmad_adj": {
+   "max_stat": 1.65,
+   "sig_cycles": "none"
+  },
+  "dap -> usdmad_adj": {
+   "max_stat": 4.62,
+   "sig_cycles": "none"
+  },
+  "dap -> masi": {
+   "max_stat": 6.04,
+   "sig_cycles": "2.8\u20133m"
+  }
+ }
+}
